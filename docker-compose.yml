@@ -6,5 +6,3 @@ services:
             - ./:/app
             - ~/.ssh:/root/.ssh
             - ~/.composer:/root/.composer
-        env_file:
-            - .env
