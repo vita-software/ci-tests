@@ -1,0 +1,10 @@
+version: '2'
+services:
+    cli:
+        image: lojassimonetti/php-cli-docker:latest
+        volumes:
+            - ./:/app
+            - ~/.ssh:/root/.ssh
+            - ~/.composer:/root/.composer
+        env_file:
+            - .env
